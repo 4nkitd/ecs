@@ -1,0 +1,26 @@
+{
+  "function": {
+    "scope": "javascript",
+    "prefix": ["fun", "function"],
+    "body": [
+      "const ${1:fun_name} = ${2|async, |} (req, res) => {",
+      "try {",
+      "",
+      "     var ${3:name} = req.body.${3:name};",
+      "",
+      "} catch (error) {",
+      "",
+      "        var log = \" file:${TM_FILENAME} @  line:${TM_LINE_NUMBER}  | ${1:fun_name} |-> ${JSON.stringify(error)} \"",
+      "       // logger.log('Error', log);",
+      "",
+      "        return res.json({",
+      "                status: false,",
+      "                error: 'Unknown Error Ocurred',",
+      "        });",
+      "",
+      "};"
+    ],
+    "description": "A Default Function with few implementation."
+  }
+  
+}

@@ -1,0 +1,35 @@
+{
+    "function": {
+        "scope": "php",
+        "prefix": ["fun", "function"],
+        "body": [
+            "${1|public,private|} function ${2:fun_name}(Request \\$request){ ",
+            "",
+            "   try {",
+            "",
+            "    \\$input = \\$request->all();",
+            "    \\$validator = Validator::make(\\$input,[",
+            "         'name'=>'required',",
+            "    ]);",
+            "",
+            "    if(\\$validator->fails()){",
+            "         \\$resp = [ 'status'=> false, 'error'=> \\$validator->errors()]; ",
+            "         return response()->json(\\$resp);",
+            "    } ",
+            "",
+            "    \\$resp = [];",
+            "",
+            "    return response()->json(\\$resp, 200);",
+            "",
+            "} catch (Throwable \\$e) {",
+            "",
+            "    // remember to add logs",
+            "",
+            "    \\$resp = [ 'status'=> false, 'error'=> \\$e->getMessage()]; ",
+            "    return response()->json(\\$resp);",
+            "",
+            "}"
+        ],
+        "description": "A Default Function with few implementation."
+    }
+}

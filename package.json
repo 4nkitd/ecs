@@ -1,0 +1,26 @@
+{
+    "name": "ecs",
+    "displayName": "ECS",
+    "description": "Easy Code Snippets",
+    "version": "0.0.2",
+    "icon": "logo.png",
+    "publisher": "doomsec",
+    "engines": {
+        "vscode": "^1.54.0"
+    },
+    "categories": [
+        "Snippets"
+    ],
+    "contributes": {
+        "snippets": [
+            {
+                "language": "php",
+                "path": "./snippets/php.json"
+            },
+            {
+                "language": "javascript",
+                "path": "./snippets/nodejs.json"
+            }
+        ]
+    }
+}
