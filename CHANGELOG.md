@@ -1,9 +1,6 @@
-# Change Log
+# Version History Log
 
-All notable changes to the "ecs" extension will be documented in this file.
+## Version: 0.0.3
 
-Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
-
-## [Unreleased]
-
-- Initial release
+- resolved a bug in javascript function snippet
+- added [documentation](README.md) with example
