@@ -10,7 +10,7 @@
       "",
       "     } catch (error) {",
       "",
-      "          var log = \" file:${TM_FILENAME} @  line:${TM_LINE_NUMBER}  | ${1:fun_name} |-> ${JSON.stringify(error)} \"",
+      "          var log = \" file:${TM_FILENAME} @  line:${TM_LINE_NUMBER}  | ${1:fun_name} |-> ${JSON.stringify(error, 1)} \"",
       "          // logger.log('Error', log);",
       "",
       "          return res.json({",
