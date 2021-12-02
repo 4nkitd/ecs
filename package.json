@@ -22,5 +22,13 @@
                 "path": "./snippets/nodejs.json"
             }
         ]
+    },
+    "bugs": {
+        "url": "https://github.com/4nkitd/esc/issues",
+        "email": "ankit@dagar.in"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/4nkitd/esc.git"
     }
 }
